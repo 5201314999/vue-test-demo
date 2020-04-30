@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <event @tellParent="tellParent" @hook:mounted="hookmounted"/>
+    <observer></observer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Event from './components/Event.vue'
+import Observer from './components/Observer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Event,
+    Observer
+  },
+  methods:{
+    tellParent(){
+    },
+    hookmounted(){
+    }
   }
 }
 </script>
