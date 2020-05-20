@@ -5,8 +5,9 @@ Description 响应式模块例子
 @version 1.0.0
 -->
 <template>
-  <div>
+  <div @click="test">
     Hello, World!
+    {{person.name}}
   </div>
 </template>
 
@@ -23,6 +24,12 @@ Description 响应式模块例子
     mounted(){
       // 获取对象属性的自有属性
       console.log(Object.getOwnPropertyDescriptor(this.person,'name'))
+      console.log(this)
+    },
+    methods:{
+      test(){
+        this.name='jj'
+      }
     }
   }
 </script>
