@@ -6,6 +6,7 @@
     <compile></compile>
     <!-- <compile></compile> -->
     <vnode></vnode>
+    <n-store></n-store>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Event from './components/Event.vue'
 import Observer from './components/Observer.vue'
 import Compile from './components/Compile.vue'
 import Vnode from './components/Vnode.vue'
+import NStore from './components/Store.vue'
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     Event,
     Observer,
     Compile,
-    Vnode
+    Vnode,
+    NStore
   },
   data(){
     return {
